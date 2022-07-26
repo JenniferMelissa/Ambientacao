@@ -1,0 +1,12 @@
+body{
+    color: white;
+    background-color: black;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+    opacity : 0.5;
+}
