@@ -18,15 +18,31 @@
 
         //validando
 
-        if(login === ''){
+        if(login === ""){
             alert("Login Obrigatório");
             return false;
         }
-        else if(senha === ''){
+        else if(senha === ""){
             alert("Senha Obrigatória");
             return false;
         }
         else{
-            return true;
-        }
+            if(login != "senai")
+            {
+                alert ("Login Inválido!")
+                return false;
+            }
+            else if(senha != 123)
+            {
+                alert ("Senha inválida!")
+                return false;
+            }
+            else
+            {
+                window.sessionStorage.setItem("login",login);
+                return true;
+            }
+
+            }
+        
     }
